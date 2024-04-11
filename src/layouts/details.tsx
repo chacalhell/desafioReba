@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import {People} from '../services/types';
 import {FlatList} from 'react-native';
 import FilmListItem from '../components/film-list-item';
@@ -20,27 +20,8 @@ export default function Details(props: Props) {
   }
 
   return (
-    <View
-      style={{
-        flexDirection: 'col',
-        paddingVertical: 5,
-        paddingHorizontal: 30,
-        borderBottomColor: '#cac',
-        borderBottomWidth: 1,
-      }}>
-      <Text
-        style={{
-          fontSize: 25,
-          fontWeight: 'bold',
-          paddingVertical: 20,
-          textDecorationLine: 'underline',
-          color: 'black',
-
-          
-        }}>
-        Movies he was in:
-      </Text>
-
+    <View style={styles.container}>
+      <Text style={styles.title}>Movies he was in:</Text>
       <FlatList
         data={people.films}
         renderItem={({item}) => <FilmListItem film={item} />}
@@ -48,3 +29,24 @@ export default function Details(props: Props) {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fcf8ed',
+  },
+  title: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    paddingVertical: 20,
+    textDecorationLine: 'underline',
+    color: '#333',
+    fontFamily: 'Arial',
+    textShadowColor: 'rgba(0, 0, 0, 0.5)',
+    textShadowOffset: {width: 2, height: 2},
+    textShadowRadius: 5,
+    marginBottom: 10,
+  },
+});
