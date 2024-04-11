@@ -11,4 +11,5 @@ export interface People {
   homeworld: string;
   films: string[];
   isFavorite?: boolean;
+  url: string;
 }

@@ -14,6 +14,7 @@ interface Props {
 export const PeopleList = ({people, onRefresh, navigate}: Props) => {
   return (
     <FlatList
+      
       refreshing={false}
       onRefresh={onRefresh}
       data={people}

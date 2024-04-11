@@ -14,14 +14,14 @@ export const PeopleListItem = ({people, onPress, onRefresh}: Props) => {
       style={{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingVertical: 5,
+        paddingVertical: 10,
         paddingHorizontal: 30,
         backgroundColor: 'white',
-        borderBottomColor: '#cac',
+        borderBottomColor: 'black',
         borderBottomWidth: 1,
       }}>
       <TouchableOpacity onPress={onPress}>
-        <Text>
+        <Text style={{color: 'black'}}>
           {people.id} - {people.name}
         </Text>
       </TouchableOpacity>
