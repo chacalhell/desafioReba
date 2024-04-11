@@ -78,4 +78,4 @@ npm start
 The Star Wars API](https://swapi.dev/) la cual obtiene datos de los personajes de Stars Wars.
 
 # Preview
-![preview]()
+![preview](https://github.com/chacalhell/desafioReba/blob/master/preview.gif?raw=true)
