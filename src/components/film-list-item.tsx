@@ -18,11 +18,7 @@ export default function FilmListItem({film}: Props) {
           paddingVertical: 10,
         }}>
         <Icon name="link" size={15} color="black" />
-        <Text
-          style={{paddingLeft: 15, color: 'blue'}}
-          onPress={() => Linking.openURL('https://google.com.ar')}>
-          {film}
-        </Text>
+        <Text style={{paddingLeft: 15, color: 'blue'}}>{film}</Text>
       </View>
       <View>
         <FilmCover film={film} />

@@ -1,48 +1,81 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# Desafio Reba
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+## Indice
+- [Desafio Reba](#desafio-reba)
+  - [Indice](#indice)
+  - [Requisitos](#requisitos)
+  - [Instalación](#instalación)
+  - [Scripts](#scripts)
+  - [Estructura de carpetas](#estructura-de-carpetas)
+- [Preview](#preview)
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Requisitos
+-   Node v20.0.0
+-   Emulador o dispositivo android 
 
-To start Metro, run the following command from the _root_ of your React Native project:
 
-```bash
-# using npm
+## Instalación
+
+- Instalar  dependencias: 
+```
+npm install
+```
+- Ejecutar metro: 
+```
 npm start
-
-# OR using Yarn
-yarn start
 ```
+- Ejecutar aplicacion: 
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android Only
-
-```bash
-# using npm
+```
 npm run android
+```
+- En caso de probar en celular, copiar el apk  que se encuentra en la carpeta APK dentro del proyecto al dispositivo e instalar.
 
-# OR using Yarn
-yarn android
+
+
+## Scripts
+
+- Crear APK para android:
+```
+npm run android-release
+```
+- Ejecutar tests:
+```
+npm run test
+```
+- Ejecutar Metro:
+```
+npm start
 ```
 
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Estructura de carpetas
+```
+├── APK
+├── src
+│   ├── assets
+│   ├── components
+│   ├── helper
+│   ├── hooks
+│   ├── layouts
+│   ├── navigation
+│   └── services
+```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+- `APK` : Directorio donde se encuentra el APK de la aplicación.
+¡Por supuesto! Aquí tienes una versión breve para tu README.md:
 
-## Step 3: Modifying your App
+- `assets`: Recursos estáticos como imágenes, fuentes y archivos de audio.
+- `components`: Componentes reutilizables de React para construir la interfaz de usuario.
+- `helper`: Funciones auxiliares y utilidades para tareas comunes.
+- `hooks`: Hooks personalizados de React para reutilizar la lógica en toda la aplicación.
+- `layouts`: Componentes de alto nivel que definen la estructura de las pantallas.
+- `navigation`: Configuración y lógica de navegación de la aplicación.
+- `services`: Integración con servicios externos y manejo de API. Se utiliza la API [SWAPI
+The Star Wars API](https://swapi.dev/) la cual obtiene datos de los personajes de Stars Wars.
 
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
+# Preview
+![preview]()

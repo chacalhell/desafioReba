@@ -33,8 +33,12 @@ export default function Details(props: Props) {
           fontSize: 25,
           fontWeight: 'bold',
           paddingVertical: 20,
+          textDecorationLine: 'underline',
+          color: 'black',
+
+          
         }}>
-        Films
+        Movies he was in:
       </Text>
 
       <FlatList
